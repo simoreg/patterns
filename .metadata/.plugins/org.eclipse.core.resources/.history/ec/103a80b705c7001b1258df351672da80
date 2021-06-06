@@ -1,0 +1,17 @@
+package factory_method;
+
+public class WindowsButton implements Button {
+
+	@Override
+	public void render() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void onClick() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

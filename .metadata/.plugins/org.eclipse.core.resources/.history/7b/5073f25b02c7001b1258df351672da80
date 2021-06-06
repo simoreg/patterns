@@ -1,0 +1,5 @@
+package template_method;
+
+public abstract class Network {
+
+}

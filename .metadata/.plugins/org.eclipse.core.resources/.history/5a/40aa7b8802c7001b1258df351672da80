@@ -1,0 +1,30 @@
+/**
+ * 
+ */
+package template_method;
+
+/**
+ * @author Governo
+ *
+ */
+public class Facebook extends Network {
+
+	@Override
+	boolean logIn(String userName, String password) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	boolean sendData(byte[] data) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	void logOut() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

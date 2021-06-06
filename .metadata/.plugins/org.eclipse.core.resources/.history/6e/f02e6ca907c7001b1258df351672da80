@@ -1,0 +1,40 @@
+package factory_method;
+
+
+public class Demo {
+	
+	private static Dialog dialog;
+
+	public static void main(String[] args) {
+		configure();
+        runBusinessLogic();
+
+	}
+	
+	/*
+	 * 
+	 * O objeto geralmente é escolhido dependendo da configuração ou opções de ambiente.
+	 * 
+	 * */
+	static void configure() {
+        if (System.getProperty("os.name").equals("Windows 10")) {
+            dialog = new WindowsDialog();
+        } else {
+            dialog = new HtmlDialog();
+        }
+    }
+	
+	/*
+	 * 
+	 * 	Todo o código do cliente deve funcionar com fábricas e produtos por meio
+		interfaces abstratas. Desta forma, não importa com qual fábrica ela funciona
+		com e que tipo de produto ele retorna.
+	 * 
+	 * 
+	 * 
+	 * */
+	static void runBusinessLogic() {
+        dialog.renderWindow();
+    }
+
+}
